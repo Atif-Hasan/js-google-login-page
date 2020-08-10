@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Login Form</title>
+   
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-wrapper-outer">
+
+        <div class="form-logo">
+            <img src="./img/logo.png" class="logo" alt="logo">
+        </div>
+        <div class="form-login">
+            <span>Use your Google Account</span>
+        </div>
+
+       <form class="login_form" action="password.html" name="form" method="post" onsubmit="return emailValidation()">
+        <div class="field-wrapper">
+            <input type="text" name="email" id="email" class="validateEmail" required>
+            <br/>
+            <!-- <div class="error-message">
+                <span class="field-placeholder icon_display" id="email-label input-error"> </span>
+             
+            </div> -->
+
+            <div class="error-message">
+                <span class="fas fa-exclamation-circle icon_display" id="email_error"> Couldn't find your account</span>
+             
+            </div>
+            
+            <div class="field-placeholder" id="email-label">
+                <span>Email or phone</span>
+            </div> 
+            
+        </div>
+        
+        <div class="form-button">
+            <button type="submit" class="button button-submit" id="login-form-submit" onclick="emailValidation()">Next</button>
+        </div>
+    </form>
+    <!-- <span class="fas fa-exclamation-circle icon_display" id="input-error"> Couldn't find your account</span> -->
+    </div>
+
+   
+    <script src="app.js"></script>
+    
+    
+</body>
+</html>
