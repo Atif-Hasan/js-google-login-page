@@ -23,13 +23,15 @@ function emailValidation() {
     else {
         if(user_email !== "") {
             email.style.border = "1px solid red";
-            email_error.style.display = "block";   
+            email_error.style.display = "block";  
+            
            
         }
 
         else {
             document.getElementById("email_error").innerHTML = " Enter an email or phone number";
         }
+        return false;
     }
        
     
