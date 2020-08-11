@@ -31,7 +31,7 @@ function emailValidation() {
         else {
             document.getElementById("email_error").innerHTML = " Enter an email or phone number";
         }
-        return false;
+        
     }
        
     
